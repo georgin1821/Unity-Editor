@@ -12,4 +12,18 @@ public class Monster : MonoBehaviour
         Debug.Log("Damage: " + _data.Damage);
         Debug.Log("Name: " + _data.Name);
     }
+
+    private void OnDrawGizmos()
+    {
+        
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _data.RangeOfAwareness);
+
+        Vector3 direction = Vector3.forward;
+        Gizmos.color = Color.green;
+        Gizmos.DrawRay(transform.position, direction * _data.RangeOfAwareness);
+    }
 }

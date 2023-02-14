@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: Illarus
   _monsterType: 3
   _changeToDropItem: 0
-  _rangeOfAwareness: 10
+  _rangeOfAwareness: 4
   _damage: 5
   _health: 20
   _speed: 10
