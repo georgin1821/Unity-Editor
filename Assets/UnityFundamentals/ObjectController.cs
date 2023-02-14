@@ -10,16 +10,5 @@ public class ObjectController : MonoBehaviour
 
     [SerializeField] Light _light;
 
-    private void Start()
-    {
-    }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            _light.intensity = 10;
-
-        }
-    }
 }
